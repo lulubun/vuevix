@@ -7,9 +7,9 @@
         <h3>{{dog.breed}}</h3>
       </div>
     </v-card-title>
+    <v-btn @click="$emit('addToFavorites', dog)">Add to Favorites</v-btn>
   </v-card>
 </template>
-
 <script>
 export default {
   props: {
